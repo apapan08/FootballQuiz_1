@@ -928,6 +928,15 @@
             .video-title h1 {
                 font-size: 16px;
             }
+            
+            /* Additional mobile fixes for scoring */
+            .scoring-section {
+                padding: 12px;
+            }
+            
+            .players-container {
+                gap: 6px;
+            }
         }
         
         @media (max-width: 480px) {
@@ -1028,7 +1037,7 @@
             /* Mobile optimizations for scoring section */
             .scoring-section {
                 margin-top: 20px;
-                padding: 20px;
+                padding: 15px;
             }
             
             .scoring-title {
@@ -1037,11 +1046,12 @@
             }
             
             .players-container {
-                gap: 15px;
+                gap: 8px;
             }
             
             .player-section {
-                padding: 15px;
+                padding: 12px;
+                min-width: 0; /* Allow shrinking */
             }
             
             .player-name {
@@ -1061,38 +1071,40 @@
             }
             
             .score-controls {
-                gap: 12px;
+                gap: 10px;
             }
         }
         
         /* Extra small screens */
         @media (max-width: 480px) {
             .scoring-section {
-                padding: 15px;
+                padding: 10px;
             }
             
             .players-container {
-                gap: 10px;
+                gap: 5px;
             }
             
             .player-section {
-                padding: 12px;
+                padding: 8px;
+                min-width: 0; /* Allow shrinking */
+                flex: 1; /* Equal width distribution */
             }
             
             .score-display {
                 font-size: 24px;
-                min-width: 45px;
-                padding: 6px;
+                min-width: 40px;
+                padding: 4px;
             }
             
             .score-btn {
-                width: 35px;
-                height: 35px;
+                width: 32px;
+                height: 32px;
                 font-size: 14px;
             }
             
             .score-controls {
-                gap: 10px;
+                gap: 8px;
             }
             
             .player-name {
